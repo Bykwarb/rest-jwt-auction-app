@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href = "@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+
+<div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" th:style="'background-image:url(' + @{/images/bg_1.jpg} +');'"></div>
+    <div class="contents order-2 order-md-1">
+
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-7">
+                    <h3>Login</h3>
+                    <form th:action="@{/registration}" method="post">
+
+                        <div class="form-group first">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" placeholder="Username" id="username" name="username">
+                        </div>
+
+                        <div class="form-group first">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" placeholder="your-email@gmail.com" id="email" name="email">
+                        </div>
+
+                        <div class="form-group last mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" placeholder="Your Password" id="password" name="password">
+                        </div>
+
+                        <input type="submit" value="Submit" class="btn btn-block btn-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

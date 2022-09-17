@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/create}" method="post" enctype="multipart/form-data">
+
+    <div>
+        <label for="lotName">Lot name</label>
+        <input type="text" placeholder="name" id="lotName" name="lotName">
+    </div>
+
+    <div>
+        <label for="p-price">P price</label>
+        <input type="number" placeholder="0.0" id="p-price" name="p-price">
+    </div>
+
+    <div>
+        <label for="s-price">S price</label>
+        <input type="number" placeholder="0.0" id="s-price" name="s-price">
+    </div>
+    <div>
+        <label for="category">Category</label>
+        <input type="text" placeholder="Your Password" id="category" name="category">
+    </div>
+    <div>
+        <label for="status">Status</label>
+        <input type="text" placeholder="Your Password" id="status" name="status">
+    </div>
+    <div>
+        <label for="s-date">S date</label>
+        <input type="datetime-local" class="form-control" placeholder="s date" id="s-date" name="s-date">
+    </div>
+    <div>
+        <label for="e-date">E date</label>
+        <input type="datetime-local" class="form-control" placeholder="e date" id="e-date" name="e-date">
+    </div>
+    <div>
+        <label>Image</label>
+        <input type="file" class="form-control" name="images">
+    </div>
+    <div>
+        <label>Image2</label>
+        <input type="file" class="form-control"  name="images">
+    </div>
+    <div>
+        <label>Image3</label>
+        <input type="file" class="form-control" name="images">
+    </div>
+    <input type="submit" value="Log In" class="btn btn-block btn-primary">
+    </form>
+</body>
+</html>
